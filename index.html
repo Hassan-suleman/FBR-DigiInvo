@@ -803,11 +803,18 @@
         "Product wise sale invoice report",
         "All reports download as PDF",
       ];
+      const UNLIMITED = [
+        "Secure Data Storage & Protection",
+        "Unlimited Invoices, Products & Customers",
+        "Automatic Database Backup & Recovery",
+        "Customer Ledger Report",
+        "Advanced Invoice Search & Filtering",
+      ];
       const PLANS = [
         {
           name: "Basic",
           price: "2,500",
-          vol: ["35 invoices / month", "50 FBR invoices every month"],
+          vol: ["35 FBR invoices every month"],
           groups: [["Features", BASIC]],
         },
         {
@@ -823,10 +830,11 @@
         {
           name: "Unlimited",
           price: "10,000",
-          vol: ["1000 FBR invoices every month"],
+          vol: ["3000 FBR invoices every month"],
           groups: [
             ["Everything in Basic", BASIC],
             ["Everything in Premium", PREMIUM],
+            ["Value Addition", UNLIMITED]
           ],
         },
       ];
